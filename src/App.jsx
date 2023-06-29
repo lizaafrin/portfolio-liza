@@ -9,7 +9,7 @@ import Skills from './components/Skills';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-import AllProjects from './components/Projects/AllProjects';
+// import AllProjects from './components/Projects/AllProjects';
 
 function App() {
   useEffect(() => {
