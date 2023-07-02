@@ -2,39 +2,38 @@
 import Hero_person from "./assets/images/bannerImg/logo.png";
 
 import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import ps from "./assets/images/Skills/ps.png";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
-import python from "./assets/images/Skills/python.png";
+import mongodb from "./assets/images/Skills/mongodb.png";
+import tailwind from "./assets/images/Skills/tailwind.png";
+import bootstrap from "./assets/images/Skills/bootstrap.png";
+import firebase from "./assets/images/Skills/firebase2.png";
+import github from "./assets/images/Skills/github.png";
+import vercel from "./assets/images/Skills/vercel.svg";
+import javascript from "./assets/images/Skills/javascript.png";
+import express from "./assets/images/Skills/express.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
-import project1 from "./assets/images/projects/img1.png";
-import project2 from "./assets/images/projects/img2.png";
-import project3 from "./assets/images/projects/img3.png";
+import project1 from "./assets/images/projects/dancewave2.png";
+import project2 from "./assets/images/projects/kitchencanvas.png";
+import project3 from "./assets/images/projects/edujoytoy.png";
 import person_project from "./assets/images/projects/person.png";
-
-import avatar1 from "./assets/images/Testimonials/avatar1.png";
-import avatar2 from "./assets/images/Testimonials/avatar2.png";
-import avatar3 from "./assets/images/Testimonials/avatar3.png";
-import avatar4 from "./assets/images/Testimonials/avatar4.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
-import { MdArrowForward, MdCall, MdFacebook, MdWhatsapp } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
+import { MdArrowForward, MdWhatsapp } from "react-icons/md";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { SiTailwindcss } from "react-icons/si";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export const content = {
   nav: [
@@ -82,41 +81,60 @@ export const content = {
     skills_content: [
       {
         name: "React js",
-        para: "Lorem ipsum text  dummy",
-        description: "Lorem ipsum",
+        expertise: "Advanced",
         icon: reactjs,
       },
       {
         name: "Node js",
-        para: "Lorem ipsum text  dummy",
-        description: "Lorem ipsum",
+        expertise: "Beginner",
         icon: nodejs,
       },
       {
+        name: "Express js",
+        expertise: "Intermediate",
+        icon: express,
+      },
+      {
+        name: "JavaScript",
+        expertise: "Intermediate",
+        icon: javascript,
+      },
+      {
         name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        description: "Lorem ipsum",
+        expertise: "Intermediate",
         icon: figma,
       },
-     
+
       {
         name: "Tailwind",
-        para: "Lorem ipsum text  dummy",
-        description: "Lorem ipsum",
-        icon: SiTailwindcss,
+        expertise: "Advanced",
+        icon: tailwind,
       },
-     
       {
-        name: "Firebase",
-        para: "Lorem ipsum text  dummy",
-        description: "Lorem ipsum",
-        icon: sketch,
+        name: "Bootstrap",
+        expertise: "Advanced",
+        icon: bootstrap,
       },
+
       {
         name: "MongoDB",
-        para: "Lorem ipsum text  dummy",
-        description: "Lorem ipsum",
-        icon: python,
+        expertise: "Intermediate",
+        icon: mongodb,
+      },
+      {
+        name: "GitHub",
+        expertise: "Intermediate",
+        icon: github,
+      },
+      {
+        name: "Firebase",
+        expertise: "Intermediate",
+        icon: firebase,
+      },
+      {
+        name: "Vercel",
+        expertise: "Intermediate",
+        icon: vercel,
       },
     ],
     icon: MdArrowForward,
@@ -127,12 +145,12 @@ export const content = {
     service_content: [
       {
         title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "The web development service offered involves the creation of customized, user-friendly and responsive websites using the latest technologies. From front-end to back-end development, the vision is brought to life, whether it is a simple website or a complex e-commerce platform. Clients can expect fully functional online presences that align with their unique needs. Trust is placed in the team to deliver exceptional results.",
         logo: services_logo1,
       },
       {
         title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "The UI/UX design service offered focuses on the creation of intuitive and visually appealing user interfaces. Special attention is given to ensuring seamless user experiences throughout the design process. User requirements are understood and incorporated into the design through research and analysis. Emphasis is placed on creating user-centered designs that meet client objectives. From wireframing to prototyping, each step is carefully executed to deliver engaging and user-friendly designs. Visually captivating and functional designs that enhance the overall user experience are guaranteed to be delivered by our UI/UX design service.",
         logo: services_logo2,
       },
       {
@@ -148,49 +166,31 @@ export const content = {
     image: person_project,
     project_content: [
       {
-        title: "Dance School Website",
+        title: "Dance Wave",
         image: project1,
-        description: "Dance School Website",
+        description:
+          "The dance school website includes separate dashboards for the admin, instructors, and students. Users register and log in to access classes. Students select classes, make payments, and get enrolled. Instructors add classes, subject to admin approval. The admin manages user roles, assigning them as instructors or admins.",
+        technologies: ["firebase", "react query", "jwt token", "stripe.js"],
+        livesite: "https://dance-wave.web.app",
+        githubLink: "https://github.com/lizaafrin/dance-wave-client",
       },
       {
         title: "Kitchen Canvas",
         image: project2,
-        description: "kitchen"
+        description:
+          "This responsive web app was created for online food ordering. Users can view profiles of top chefs and their best recipes. The app features a Login and Registration system with authentication via Google and GitHub using Firebase. Private routes were implemented to ensure secure access to recipe details.",
+        technologies: ["mongoDB", "vercel", "react router", "firebase"],
+        livesite: "https://chef-recipe-hunter-3bf76.web.app",
+        githubLink: "https://github.com/lizaafrin/kitchencanvas-client",
       },
       {
-        title: "Education elements based website",
+        title: "EduJoyToy",
         image: project3,
-        description: "education"
-      },
-    ],
-  },
-  Testimonials: {
-    title: "Testimonials",
-    subtitle: "MY CLIENT REVIEWS",
-    testimonials_content: [
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar1,
-        name: "JOHN DOE",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar2,
-        name: "Tom Alex",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar3,
-        name: "Johnny",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar4,
-        name: "ROBBIN",
+        description:
+          "This is an e-commerce website for an educational/scientific kits. Users can easily find desired products by category and also utilize the search system to find specific items. The 'Add a Toy' private route allows users to contribute new products to the database, while the 'My Toys' page enables them to view and delete their own listings.",
+        technologies: ["react router", "tailwind", "vercel", "express.js"],
+        livesite: "https://edujoytoy.web.app",
+        githubLink: "https://github.com/lizaafrin/edujoy-toy-client",
       },
     ],
   },
@@ -218,8 +218,8 @@ export const content = {
       },
       {
         text: "Liza Afrin",
-        icon: MdFacebook,
-        link: "https://www.facebook.com/liza.afrin.1804",
+        icon: FaLinkedin,
+        link: "https://www.linkedin.com/in/liza-afrin-313b38146",
       },
     ],
   },

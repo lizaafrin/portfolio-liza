@@ -77,7 +77,7 @@ const Skills = () => {
           {skills.subtitle}
         </h4>
         <br />
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center mb-16">
           {skills.skills_content.map((skill, i) => (
             <div
               key={i}
@@ -91,13 +91,19 @@ const Skills = () => {
                 <img
                   src={skill.icon}
                   alt="..."
-                  className="w-10 group-hover:scale-125 duration-200"
+                  className="w-10 max-h-10 group-hover:scale-125 duration-200"
                 />
               </div>
               <div>
-                <h6>{skill.name}</h6>
-                <p className="italic">{skill.para}</p>
-                <div
+                <h6 className="capitalize">
+                  {skill.name}
+                  <small className="capitalize ms-2 text-gray ">
+                    ({skill.expertise})
+                  </small>{" "}
+                </h6>
+
+                {/* <p className="italic">{skill.para}</p> */}
+                {/* <div
                   onClick={() => {
                     setSelectSkill(skill);
                     openModal();
@@ -105,7 +111,7 @@ const Skills = () => {
                   className="text-xl absolute top-3 right-3"
                 >
                   {createElement(skills.icon)}
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

@@ -13,7 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-      'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
+        "service_4ypmvde",
+        "template_9ggz6hq",
+        form.current,
+        "F1hga5PTj5aprP_Jd"
       )
       .then(
         (result) => {
@@ -58,9 +61,10 @@ const Contact = () => {
             />
             <input
               type="email"
-              name="user_email"
-              pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-              placeholder="Email Id"
+              name="from_email"
+              // name="user_email"
+              // pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+              placeholder="Email"
               required
               className="border border-slate-600 p-3 rounded"
             />
@@ -74,7 +78,7 @@ const Contact = () => {
               className="btn self-start
             bg-white text-dark_primary"
             >
-              Submitt
+              Submit
             </button>
           </form>
           <div className="flex-1 flex flex-col gap-5">
