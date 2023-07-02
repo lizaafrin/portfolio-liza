@@ -47,12 +47,12 @@ const Projects = () => {
                       </p>
                     ))}
                   </div>
-                  <div className="flex gap-4 items-center">
+                  <div className="flex gap-12 items-center group">
                     <a
                       href={content.githubLink}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center justify-center gap-2"
+                      className="flex items-center justify-center gap-2 group-hover:scale-105 duration-500"
                     >
                       <span className="text-lg w-10 h-10 rounded-full bg-red-200 inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
                         <BsGithub />
@@ -63,7 +63,7 @@ const Projects = () => {
                       href={content.livesite}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center justify-center gap-2"
+                      className="flex items-center justify-center gap-2 group-hover:scale-105 duration-500"
                     >
                       <span className="text-lg w-10 h-10 rounded-full bg-red-200 inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
                         <FaGlobe />

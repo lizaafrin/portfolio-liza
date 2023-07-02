@@ -33,25 +33,31 @@ import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { SiTailwindcss } from "react-icons/si";
-import { FaLinkedin, FaShoppingCart } from "react-icons/fa";
+import {
+  FaCogs,
+  FaHandsHelping,
+  FaLinkedin,
+  FaProjectDiagram,
+  FaShoppingCart,
+} from "react-icons/fa";
 
 export const content = {
   nav: [
     {
       link: "#home",
-      icon: TbSmartHome,
-    },
-    {
-      link: "#skills",
       icon: BiUser,
     },
     {
+      link: "#skills",
+      icon: FaCogs,
+    },
+    {
       link: "#services",
-      icon: RiServiceLine,
+      icon: FaHandsHelping,
     },
     {
       link: "#projects",
-      icon: RiProjectorLine,
+      icon: FaProjectDiagram,
     },
     {
       link: "#contact",
@@ -145,17 +151,17 @@ export const content = {
     service_content: [
       {
         title: " Custom Web Development",
-        para: "The custom web development service offered involves the creation of customized, user-friendly and responsive websites using the latest technologies. From front-end to back-end development, the vision is brought to life, whether it is a simple website or a complex e-commerce platform. Clients can expect fully functional online presences that align with their unique needs. Trust is placed in the team to deliver exceptional results.",
+        para: "Offering custom web development services for creating user-friendly and responsive websites. From front-end to back-end development, the team brings visions to life, delivering fully functional online presences that meet clients' unique needs. Trust the team to deliver exceptional results.",
         logo: services_logo1,
       },
       {
         title: "E-commerce Website Development:",
-        para: "E-commerce website development services are offered to assist businesses in establishing an online presence and facilitating the sale of their products or services. The ability to integrate secure payment gateways, manage product catalogs, and optimize the overall shopping experience using React and other suitable frameworks is showcased. With these services, businesses can have their online platforms developed, ensuring seamless and secure transactions for their customers.",
+        para: "Offering e-commerce website development services to help businesses establish their online presence, enabling secure transactions. Showcase expertise in integrating payment gateways, managing product catalogs, and optimizing the shopping experience using React and other frameworks.",
         logo: services_logo2,
       },
       {
         title: "Website Maintenance and Support:",
-        para: "Ongoing maintenance and support services are provided for existing websites. Services include bug fixes, security updates, performance optimization, and content updates. The commitment to ensuring that clients' websites remain up-to-date, secure, and fully functional is emphasized. By offering these services, clients can rely on the continuous monitoring and improvement of their websites, ensuring a seamless online experience for their users.",
+        para: "Offering ongoing website maintenance and support services, including bug fixes, security updates, performance optimization, and content updates. Ensuring clients' websites remain up-to-date, secure, and fully functional, providing a seamless online experience for users.",
         logo: services_logo3,
       },
     ],

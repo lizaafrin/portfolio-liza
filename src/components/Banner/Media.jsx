@@ -1,4 +1,5 @@
 import React from "react";
+import resume from '/lizaafrin.pdf'
 import {
   FaFacebookF,
   FaTwitter,
@@ -17,8 +18,8 @@ const Media = () => {
         </h2>
         <div className="flex gap-4 justify-center">
           <a
-            download="Lizaafrin.pdf"
-            href="/public/Lizaafrin.pdf"
+            download="lizaafrin.pdf"
+            href={resume}
             target="_blank"
             rel="noreferrer"
             className="border-2 font-semibold border-red-700/70 hover:bg-red-700/70 hover:text-white duration-500 cursor-pointer rounded-md flex items-center justify-center px-4"
