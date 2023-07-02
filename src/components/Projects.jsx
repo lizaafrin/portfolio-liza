@@ -25,24 +25,24 @@ const Projects = () => {
           <br />
           <div className="flex flex-col gap-10">
             {Projects.project_content.map((content, i) => (
-              <div className="group flex gap-10 mb-10 bg-white p-8 rounded-xl">
-                <div className="w-1/2 h-96 overflow-hidden cursor-pointer">
+              <div className="group flex flex-col md:flex-row gap-10 justify-center items-center mb-10 bg-white p-8 rounded-xl">
+                <div className="w-full md:w-1/2 h-40 md:h-96 overflow-hidden cursor-pointer">
                   <img
                     src={content.image}
                     alt="..."
                     className="h-auto group-hover:-translate-y-[87%] duration-[7s]"
                   />
                 </div>
-                <div className="w-1/2 flex flex-col gap-1 mt-2 px-8">
-                  <h5 className="font-bold font-Poppins text-4xl">
+                <div className="w-full md:w-1/2 flex flex-col gap-1 mt-2 md:px-8">
+                  <h5 className="font-bold font-Poppins text-2xl md:text-4xl">
                     {content.title}
                   </h5>
-                  <p className="text-lg my-4 text-justify">
+                  <p className="text-sm md:text-lg my-4 text-justify">
                     {content.description}
                   </p>
-                  <div className="flex gap-4 mb-8 mt-2">
+                  <div className="md:flex grid grid-cols-2 gap-4 mb-8 mt-2">
                     {content.technologies.map((tenology, i) => (
-                      <p className=" bg-slate-200 px-4 py-2 text-center capitalize rounded-full">
+                      <p className=" bg-slate-200 px-4 py-2 text-center capitalize rounded-full text-sm">
                         {tenology}
                       </p>
                     ))}

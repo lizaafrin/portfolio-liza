@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-center">
       <div
-        className="sm:cursor-pointer fixed top-10 left-10 z-[999] rounded-lg bg-white p-2"
+        className="sm:cursor-pointer fixed top-4 md:top-10 left-4 md:left-10 z-[999] rounded-lg bg-white p-2"
         onClick={() => setShowMenu(!showMenu)}
       >
         <HiMenuAlt2 size={34} />
@@ -26,8 +26,9 @@ const Navbar = () => {
             key={i}
             href={item.link}
             onClick={() => setActive(i)}
-            className={`text-xl p-2.5 rounded-full sm:cursor-pointer 
-     ${i === active && "bg-dark_primary text-white"} `}
+            className={`text-xl p-2.5 rounded-full sm:cursor-pointer ${
+              i === active && "bg-dark_primary text-white"
+            } `}
           >
             {createElement(item.icon)}
           </a>

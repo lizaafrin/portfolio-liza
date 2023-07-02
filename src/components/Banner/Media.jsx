@@ -1,5 +1,5 @@
 import React from "react";
-import resume from '/lizaafrin.pdf'
+import resume from "/lizaafrin.pdf";
 import {
   FaFacebookF,
   FaTwitter,
@@ -12,6 +12,15 @@ import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
 const Media = () => {
   return (
     <div className="">
+      <a
+        download="lizaafrin.pdf"
+        href={resume}
+        target="_blank"
+        rel="noreferrer"
+        className="block md:hidden w-60 border-2 font-semibold border-red-700/70 hover:bg-red-700/70 hover:text-white duration-500 cursor-pointer rounded-md items-center justify-center px-4 mx-auto py-2 text-lg"
+      >
+        Download Resume
+      </a>
       <div>
         <h2 className="text-base uppercase font-titleFont mb-4 mt-8">
           Find me in
@@ -22,7 +31,7 @@ const Media = () => {
             href={resume}
             target="_blank"
             rel="noreferrer"
-            className="border-2 font-semibold border-red-700/70 hover:bg-red-700/70 hover:text-white duration-500 cursor-pointer rounded-md flex items-center justify-center px-4"
+            className="hidden md:flex border-2 font-semibold border-red-700/70 hover:bg-red-700/70 hover:text-white duration-500 cursor-pointer rounded-md items-center justify-center px-4"
           >
             Download Resume
           </a>
