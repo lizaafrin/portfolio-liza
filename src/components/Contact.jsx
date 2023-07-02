@@ -78,7 +78,7 @@ const Contact = () => {
               className="btn self-start
             bg-white text-dark_primary"
             >
-              Submit
+              Send Message
             </button>
           </form>
           <div className="flex-1 flex flex-col gap-5">

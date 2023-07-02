@@ -13,7 +13,7 @@ import { FaGlobe } from "react-icons/fa";
 const Projects = () => {
   const { Projects } = content;
   return (
-    <section className="bg-bg_light_primary" id="projects">
+    <section className="bg-bg_light_primary my-24" id="projects">
       <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
         <div>
           <h2 className="title" data-aos="fade-down">
@@ -25,7 +25,7 @@ const Projects = () => {
           <br />
           <div className="flex flex-col gap-10">
             {Projects.project_content.map((content, i) => (
-              <div className="group flex gap-10 mb-10">
+              <div className="group flex gap-10 mb-10 bg-white p-8 rounded-xl">
                 <div className="w-1/2 h-96 overflow-hidden cursor-pointer">
                   <img
                     src={content.image}
@@ -37,7 +37,7 @@ const Projects = () => {
                   <h5 className="font-bold font-Poppins text-4xl">
                     {content.title}
                   </h5>
-                  <p className="text-xl my-4 text-justify">
+                  <p className="text-lg my-4 text-justify">
                     {content.description}
                   </p>
                   <div className="flex gap-4 mb-8 mt-2">
@@ -48,28 +48,28 @@ const Projects = () => {
                     ))}
                   </div>
                   <div className="flex gap-4 items-center">
-                    <div className="flex items-center gap-2">
-                      <a
-                        href={content.githubLink}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-lg w-10 h-10 rounded-full bg-red-200 inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer"
-                      >
+                    <a
+                      href={content.githubLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-center gap-2"
+                    >
+                      <span className="text-lg w-10 h-10 rounded-full bg-red-200 inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
                         <BsGithub />
-                      </a>
+                      </span>
                       <p>Github</p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <a
-                        href={content.livesite}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-lg w-10 h-10 rounded-full bg-red-200 inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer"
-                      >
+                    </a>
+                    <a
+                      href={content.livesite}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-center gap-2"
+                    >
+                      <span className="text-lg w-10 h-10 rounded-full bg-red-200 inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
                         <FaGlobe />
-                      </a>
-                      <p>LiveSite</p>
-                    </div>
+                      </span>
+                      <p>Live Site</p>
+                    </a>
                   </div>
                 </div>
               </div>

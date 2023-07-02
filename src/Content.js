@@ -33,7 +33,7 @@ import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 import { SiTailwindcss } from "react-icons/si";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaShoppingCart } from "react-icons/fa";
 
 export const content = {
   nav: [
@@ -144,18 +144,18 @@ export const content = {
     subtitle: "WHAT I OFFER",
     service_content: [
       {
-        title: "Web Development",
-        para: "The web development service offered involves the creation of customized, user-friendly and responsive websites using the latest technologies. From front-end to back-end development, the vision is brought to life, whether it is a simple website or a complex e-commerce platform. Clients can expect fully functional online presences that align with their unique needs. Trust is placed in the team to deliver exceptional results.",
+        title: " Custom Web Development",
+        para: "The custom web development service offered involves the creation of customized, user-friendly and responsive websites using the latest technologies. From front-end to back-end development, the vision is brought to life, whether it is a simple website or a complex e-commerce platform. Clients can expect fully functional online presences that align with their unique needs. Trust is placed in the team to deliver exceptional results.",
         logo: services_logo1,
       },
       {
-        title: "ui / ux DESIGNING",
-        para: "The UI/UX design service offered focuses on the creation of intuitive and visually appealing user interfaces. Special attention is given to ensuring seamless user experiences throughout the design process. User requirements are understood and incorporated into the design through research and analysis. Emphasis is placed on creating user-centered designs that meet client objectives. From wireframing to prototyping, each step is carefully executed to deliver engaging and user-friendly designs. Visually captivating and functional designs that enhance the overall user experience are guaranteed to be delivered by our UI/UX design service.",
+        title: "E-commerce Website Development:",
+        para: "E-commerce website development services are offered to assist businesses in establishing an online presence and facilitating the sale of their products or services. The ability to integrate secure payment gateways, manage product catalogs, and optimize the overall shopping experience using React and other suitable frameworks is showcased. With these services, businesses can have their online platforms developed, ensuring seamless and secure transactions for their customers.",
         logo: services_logo2,
       },
       {
-        title: "Hosting Websites",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        title: "Website Maintenance and Support:",
+        para: "Ongoing maintenance and support services are provided for existing websites. Services include bug fixes, security updates, performance optimization, and content updates. The commitment to ensuring that clients' websites remain up-to-date, secure, and fully functional is emphasized. By offering these services, clients can rely on the continuous monitoring and improvement of their websites, ensuring a seamless online experience for their users.",
         logo: services_logo3,
       },
     ],
@@ -187,7 +187,7 @@ export const content = {
         title: "EduJoyToy",
         image: project3,
         description:
-          "This is an e-commerce website for an educational/scientific kits. Users can easily find desired products by category and also utilize the search system to find specific items. The 'Add a Toy' private route allows users to contribute new products to the database, while the 'My Toys' page enables them to view and delete their own listings.",
+          "This is an e-commerce website for an educational / scientific kits. Users can easily find desired products by category and also utilize the search system to find specific items. The 'Add a Toy' private route allows users to contribute new products to the database, while the 'My Toys' page enables them to view and delete their own listings.",
         technologies: ["react router", "tailwind", "vercel", "express.js"],
         livesite: "https://edujoytoy.web.app",
         githubLink: "https://github.com/lizaafrin/edujoy-toy-client",

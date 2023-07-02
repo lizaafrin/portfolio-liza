@@ -17,10 +17,19 @@ const Media = () => {
         </h2>
         <div className="flex gap-4 justify-center">
           <a
+            download="Lizaafrin.pdf"
+            href="/public/Lizaafrin.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="border-2 font-semibold border-red-700/70 hover:bg-red-700/70 hover:text-white duration-500 cursor-pointer rounded-md flex items-center justify-center px-4"
+          >
+            Download Resume
+          </a>
+          <a
             target="_blank"
             rel="noreferrer"
             href="https://github.com/lizaafrin"
-            className="w-14 h-14 bg-red-700 bg-opacity-70 text-gray-200 text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300"
+            className="w-14 h-14 bg-red-500 bg-opacity-50 text-gray-200 text-xl inline-flex items-center justify-center rounded-md hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300"
           >
             <span>
               <FaGithub />
