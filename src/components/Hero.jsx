@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="overflow-hidden">
-      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end">
+      <div className="lg:min-h-screen lg:py-0 py-20 relative flex lg:flex-row flex-col-reverse justify-center items-center lg:items-end">
         <div
           data-aos="slide-left"
           data-aos-delay="1200"
@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
 
         {/* first col */}
-        <div className="pb-16 px-6 pt-20" data-aos="fade-down">
+        <div className="lg:pb-48 px-6 lg:pt-0 pt-20" data-aos="fade-down">
           {/* <h2>{hero.title}</h2>
           <br />
           <div className="flex justify-end">
@@ -71,7 +71,7 @@ const Hero = () => {
                   cursorColor="#ff014f"
                 />
               </h2>
-              <p className="text-base font-bodyFont leading-6 tracking-wide text-justify">
+              <p className="text-base w-[80%] py-5 mx-auto font-bodyFont leading-6 tracking-wide text-justify">
                 I use animation as a third dimension by which to simplify
                 experiences and kuiding thro each and every interaction. I'm not
                 adding motion just to spruce things up, but doing it in ways

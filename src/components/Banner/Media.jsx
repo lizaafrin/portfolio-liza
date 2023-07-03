@@ -25,7 +25,7 @@ const Media = () => {
         <h2 className="text-base uppercase font-titleFont mb-4 mt-8">
           Find me in
         </h2>
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-4 mb-7 justify-center">
           <a
             download="lizaafrin.pdf"
             href={resume}
@@ -67,25 +67,6 @@ const Media = () => {
           </a>
         </div>
       </div>
-      {/* <div>
-          <h2 className="text-base uppercase font-titleFont mb-4">
-            BEST SKILL ON
-          </h2>
-          <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaReact />
-            </span>
-            <span className="bannerIcon">
-              <SiNextdotjs />
-            </span>
-            <span className="bannerIcon">
-              <SiTailwindcss />
-            </span>
-            <span className="bannerIcon">
-              <SiFigma />
-            </span>
-          </div>
-        </div> */}
     </div>
   );
 };

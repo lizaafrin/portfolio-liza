@@ -4,7 +4,7 @@ const Services = () => {
   const { services } = content;
   return (
     <section id="services">
-      <div className="md:container px-5 py-14 mb-14">
+      <div className="md:container px-5 py-16 mb-14">
         <h2 className="title" data-aos="fade-down">
           {services.title}
         </h2>

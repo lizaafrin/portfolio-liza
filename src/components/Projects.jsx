@@ -13,8 +13,8 @@ import { FaGlobe } from "react-icons/fa";
 const Projects = () => {
   const { Projects } = content;
   return (
-    <section className="bg-bg_light_primary my-24" id="projects">
-      <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
+    <section className="bg-bg_light_primary pt-6 my-28" id="projects">
+      <div className="lg:container px-5 pt-14 min-h-screen flex flex-col justify-between">
         <div>
           <h2 className="title" data-aos="fade-down">
             {Projects.title}
@@ -25,22 +25,22 @@ const Projects = () => {
           <br />
           <div className="flex flex-col gap-10">
             {Projects.project_content.map((content, i) => (
-              <div className="group flex flex-col md:flex-row gap-10 justify-center items-center mb-10 bg-white p-8 rounded-xl">
-                <div className="w-full md:w-1/2 h-40 md:h-96 overflow-hidden cursor-pointer">
+              <div className="group flex flex-col lg:flex-row gap-10 justify-center items-center mb-10 bg-white p-8 rounded-xl">
+                <div className="w-full lg:w-1/2 h-60 md:h-72 lg:h-96 overflow-hidden cursor-pointer">
                   <img
                     src={content.image}
                     alt="..."
                     className="h-auto group-hover:-translate-y-[87%] duration-[7s]"
                   />
                 </div>
-                <div className="w-full md:w-1/2 flex flex-col gap-1 mt-2 md:px-8">
-                  <h5 className="font-bold font-Poppins text-2xl md:text-4xl">
+                <div className="w-full lg:w-1/2 flex flex-col gap-1 mt-2 lg:px-8">
+                  <h5 className="font-bold font-Poppins text-2xl lg:text-4xl">
                     {content.title}
                   </h5>
-                  <p className="text-sm md:text-lg my-4 text-justify">
+                  <p className="md:text-base lg:text-lg my-4 text-justify">
                     {content.description}
                   </p>
-                  <div className="md:flex grid grid-cols-2 gap-4 mb-8 mt-2">
+                  <div className="lg:flex grid grid-cols-2 gap-4 mb-8 mt-2">
                     {content.technologies.map((tenology, i) => (
                       <p className=" bg-slate-200 px-4 py-2 text-center capitalize rounded-full text-sm">
                         {tenology}
