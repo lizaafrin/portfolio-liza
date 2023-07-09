@@ -4,7 +4,6 @@ import Navbar from './Layouts/Navbar'
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import Hero from './components/Hero';
-import Banner from './components/Banner/Banner';
 import Skills from './components/Skills';
 import Services from './components/Services';
 import Contact from './components/Contact';

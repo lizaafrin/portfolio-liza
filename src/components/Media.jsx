@@ -1,19 +1,16 @@
 import React from "react";
-import resume from "/lizaafrin.pdf";
+import resume from "/Lizaafrin.pdf";
 import {
-  FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
-  FaReact,
   FaGithub,
   FaInstagram,
 } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+
 const Media = () => {
   return (
     <div className="">
       <a
-        download="lizaafrin.pdf"
+        download="Lizaafrin.pdf"
         href={resume}
         target="_blank"
         rel="noreferrer"
@@ -27,7 +24,7 @@ const Media = () => {
         </h2>
         <div className="flex gap-4 mb-7 justify-center">
           <a
-            download="lizaafrin.pdf"
+            download="Lizaafrin.pdf"
             href={resume}
             target="_blank"
             rel="noreferrer"

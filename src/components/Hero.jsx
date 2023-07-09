@@ -1,11 +1,7 @@
 // import content
-import { useEffect } from "react";
 import { content } from "../Content";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import LeftBanner from "./Banner/LeftBanner";
-import RightBanner from "./Banner/RightBanner";
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
-import Media from "./Banner/Media";
+import Media from "./Media";
 
 const Hero = () => {
   const { hero } = content;
@@ -33,25 +29,6 @@ const Hero = () => {
 
         {/* first col */}
         <div className="lg:pb-48 px-6 lg:pt-0 pt-20" data-aos="fade-down">
-          {/* <h2>{hero.title}</h2>
-          <br />
-          <div className="flex justify-end">
-            <button className="btn">{hero.btnText}</button>
-          </div> */}
-          {/* <div className="flex flex-col gap-10 mt-10">
-            {hero.hero_content.map((content, i) => (
-              <div
-                key={i}
-                data-aos="fade-down"
-                data-aos-delay={i * 300}
-                className={`flex items-center w-80 gap-5
-            ${i === 1 && " flex-row-reverse text-right"}  `}
-              >
-                <h3>{content.count}</h3>
-                <p>{content.text}</p>
-              </div>
-            ))}
-          </div> */}
           <div className="flex flex-col-reverse md:flex-row gap-6">
             <div className="flex flex-col gap-3 w-full md:w-1/2 md:ms-10 mt-2 text-center">
               <h4 className="text-base md:text-lg font-normal">
